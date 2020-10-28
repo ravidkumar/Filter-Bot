@@ -330,7 +330,7 @@ doin?
 
 """
 
-__mod_name__ = "FILTERS 📜"
+__mod_name__ = "𝗙𝗜𝗟𝗧𝗘𝗥𝗦 💾"
 
 FILTER_HANDLER = CommandHandler("filter", filters)
 STOP_HANDLER = CommandHandler("stop", stop_filter)
