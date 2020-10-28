@@ -172,8 +172,8 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="⚙️Help",callback_data="help_back"),InlineKeyboardButton(text="Master😴",url="https://t.me/D_ar_k_Angel")]]
-    keyboard += [[InlineKeyboardButton(text="♻️Connect Group", callback_data="main_connect"),InlineKeyboardButton(text="Add Me➕",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard = [[InlineKeyboardButton(text="𝗛𝗘𝗟𝗣 📲",callback_data="help_back"),InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 🧕",url="https://t.me/Iggie")]]
+    keyboard += [[InlineKeyboardButton(text="𝗖𝗢𝗡𝗡𝗘𝗖𝗧 𝗚𝗥𝗢𝗨𝗣 👥", callback_data="main_connect"),InlineKeyboardButton(text="𝗔𝗗𝗗 𝗠𝗘 ➕",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
@@ -273,8 +273,8 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="⚙️Help",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="😴Contact Creator",url="https://t.me/D_ar_k_Angel")]]))
+                                                [[InlineKeyboardButton(text="𝗛𝗘𝗟𝗣 📲",url="t.me/{}?start=help".format(bot.username))],  
+                                                [InlineKeyboardButton(text="𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗢𝗪𝗡𝗘𝗥 🧕",url="https://t.me!Iggie")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
@@ -395,7 +395,7 @@ def get_settings(bot: Bot, update: Update):
             text = "Click here to get this chat's settings, as well as yours."
             msg.reply_text(text,
                            reply_markup=InlineKeyboardMarkup(
-                               [[InlineKeyboardButton(text="⚙️Settings",
+                               [[InlineKeyboardButton(text="𝗦𝗘𝗧𝗧𝗜𝗡𝗚𝗦 ⚙️",
                                                       url="t.me/{}?start=stngs_{}".format(
                                                           bot.username, chat.id))]]))
         else:
