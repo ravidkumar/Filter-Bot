@@ -35,7 +35,8 @@ PM_START_TEXT = """
 
 HELP_STRINGS = """
 *Hello My Name Is* *{}*.
-*My Main Available Commands Are Written Below:*
+
+*My Main Available Commands Are Written Below, Bot Needs Admin Rights:*
 
 *⭕ My Name : 𝗙𝗜𝗟𝗧𝗘𝗥 𝗫 𝗕𝗢𝗧*
 
