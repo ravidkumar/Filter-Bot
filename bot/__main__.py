@@ -44,7 +44,7 @@ HELP_STRINGS = """
 
 *⭕ Language :* `Python`
 
-*⭕ Source Code : [CLICK HERE](https://t.me/NoSourceCode)*
+*⭕ Source Code :* [CLICK HERE](https://t.me/NoSourceCode)
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 
