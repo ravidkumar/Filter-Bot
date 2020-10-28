@@ -34,16 +34,12 @@ PM_START_TEXT = """
 
 
 HELP_STRINGS = """
-*Hello My Name Is* *{}*.
-*My Main Available Commands Are Written Below:*
+*Hello My name is* *{}*.
+*Main Available Commands are Below:*
 
-*⭕ My Name : 𝗙𝗜𝗟𝗧𝗘𝗥 𝗫 𝗕𝗢𝗧*
+All of the following commands  / can  be used...
 
-*⭕ Creator : @Iggie*
-
-*⭕ Language :* `Python`
-
-*⭕ Source Code : No Source Code 😂*
+And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 
