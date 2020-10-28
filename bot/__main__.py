@@ -34,12 +34,16 @@ PM_START_TEXT = """
 
 
 HELP_STRINGS = """
-*Hello My name is* *{}*.
-*Main Available Commands are Below:*
+*Hello My Name Is* *{}*.
+*My Main Available Commands Are Written Below:*
 
-All of the following commands  / can  be used...
+*⭕ My Name : 𝗙𝗜𝗟𝗧𝗘𝗥 𝗫 𝗕𝗢𝗧*
 
-And the following:
+*⭕ Creator : @Iggie*
+
+*⭕ Language :* `Python`
+
+*⭕ Source Code : No Source Code 😂*
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 
@@ -157,7 +161,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             send_start(bot, update)
     else:
         update.effective_message.reply_text("Heya,{} Here..\nHow can I help you? 🙂".format(bot.first_name),reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="𝗛𝗘𝗟𝗣 📲",url="t.me/{}?start=help".format(bot.username))]]))
+                                                [[InlineKeyboardButton(text="help",url="t.me/{}?start=help".format(bot.username))]]))
 
 def send_start(bot, update):
     #Try to remove old message
@@ -171,7 +175,7 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="𝗛𝗘𝗟𝗣 📲",callback_data="help_back"),InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 🧕",url="https://t.me/Iggie")]]
+    keyboard = [[InlineKeyboardButton(text="help",callback_data="help_back"),InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 🧕",url="https://t.me/Iggie")]]
     keyboard += [[InlineKeyboardButton(text="𝗖𝗢𝗡𝗡𝗘𝗖𝗧 𝗚𝗥𝗢𝗨𝗣 👥", callback_data="main_connect"),InlineKeyboardButton(text="𝗔𝗗𝗗 𝗠𝗘 ➕",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
@@ -272,7 +276,7 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="𝗛𝗘𝗟𝗣 📲",url="t.me/{}?start=help".format(bot.username))],  
+                                                [[InlineKeyboardButton(text="help",url="t.me/{}?start=help".format(bot.username))],  
                                                 [InlineKeyboardButton(text="𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗢𝗪𝗡𝗘𝗥 🧕",url="https://t.me!Iggie")]]))
         return
 
