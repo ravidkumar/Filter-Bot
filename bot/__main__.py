@@ -178,6 +178,7 @@ def send_start(bot, update):
 
     keyboard = [[InlineKeyboardButton(text="𝗛𝗘𝗟𝗣 📲",callback_data="help_back"),InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 🧕",url="https://t.me/Iggie")]]
     keyboard += [[InlineKeyboardButton(text="𝗖𝗢𝗡𝗡𝗘𝗖𝗧 𝗚𝗥𝗢𝗨𝗣 👥", callback_data="main_connect"),InlineKeyboardButton(text="𝗔𝗗𝗗 𝗠𝗘 ➕",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard += [[InlineKeyboardButton(text="𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 🎃",url="https://github.com/Jijinr/Filter-Bot")]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
