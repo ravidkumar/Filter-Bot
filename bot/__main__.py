@@ -27,9 +27,9 @@ from bot.modules.connection import connect_button
 
 
 PM_START_TEXT = """
-*Hello* *{}* 👋, *My name is* *{}*\n\n**You Can Add Any Kind Of Filters To This Bot!**
+*Hello* *{}* 👋, *My name is* *{}*\n\n*You Can Add Any Kind Of Filters To This Bot!*
 
-**Simply Click The Help Button For More Details On What I Can Do**
+*Simply Click The Help Button For More Details On What I Can Do*
 """
 
 
@@ -37,13 +37,13 @@ HELP_STRINGS = """
 *Hello My Name Is* *{}*.
 *My Main Available Commands Are Written Below:*
 
-**⭕ My Name : 𝗙𝗜𝗟𝗧𝗘𝗥 𝗫 𝗕𝗢𝗧**
+*⭕ My Name : 𝗙𝗜𝗟𝗧𝗘𝗥 𝗫 𝗕𝗢𝗧*
 
-**⭕ Creator : @Iggie**
+*⭕ Creator : @Iggie*
 
-**⭕ Language :** `Python`
+*⭕ Language :* `Python`
 
-**⭕ Source Code :** [Click Here](t.me:/NoSourceCode)
+*⭕ Source Code : No Source Code 😂*
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 
